@@ -25,6 +25,8 @@ namespace Csharp60
 
         static void Main(string[] args)
         {
+            // C# 6.0 examples
+
             WriteLineUsingStatic();
         }
     }
