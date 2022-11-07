@@ -58,6 +58,22 @@ namespace Csharp60
             Console.WriteLine();
         }
 
+        private static void NullCoalescingOperator()
+        {
+            Console.WriteLine("4. Null coalescing operator");
+
+            int? a = null;
+            Console.WriteLine(a ?? -1);
+
+            string name1 = null;
+            Console.WriteLine(name1 ?? "Unknown");
+
+            string name2 = "Pistaba";
+            Console.WriteLine(name2 ?? "Unknown");
+
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             Init();
@@ -66,6 +82,7 @@ namespace Csharp60
             WriteLineUsingStatic();
             StringInterpolation();
             NullConditionalOperator();
+            NullCoalescingOperator();
         }
     }
 }
