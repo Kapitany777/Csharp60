@@ -42,6 +42,20 @@ namespace Csharp60
             Console.WriteLine(string.Format("{0} + {1} = {2}", a, b, a + b));
             Console.WriteLine($"{a} + {b} = {a + b}");
             Console.WriteLine($"{a:#0.0} + {b:#0.0} = {a + b:#0.0}");
+            Console.WriteLine();
+        }
+
+        private static void NullConditionalOperator()
+        {
+            Console.WriteLine("3. Null conditional operator");
+
+            Person person1 = null;
+            Console.WriteLine(person1?.FullName);
+
+            Person person2 = new Person("John", "Smith");
+            Console.WriteLine(person2?.FullName);
+
+            Console.WriteLine();
         }
 
         static void Main(string[] args)
@@ -51,6 +65,7 @@ namespace Csharp60
             // C# 6.0 examples
             WriteLineUsingStatic();
             StringInterpolation();
+            NullConditionalOperator();
         }
     }
 }
