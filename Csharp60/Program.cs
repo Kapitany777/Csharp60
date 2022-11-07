@@ -74,6 +74,19 @@ namespace Csharp60
             Console.WriteLine();
         }
 
+        private static void GetterOnlyAutoProperties()
+        {
+            Console.WriteLine("5. Getter only auto properties");
+
+            Point point = new Point(5, 4);
+            Console.WriteLine(point);
+
+            // Error...
+            // point.X = 10;
+
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             Init();
@@ -83,6 +96,7 @@ namespace Csharp60
             StringInterpolation();
             NullConditionalOperator();
             NullCoalescingOperator();
+            GetterOnlyAutoProperties();
         }
     }
 }
