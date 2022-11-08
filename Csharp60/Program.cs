@@ -78,7 +78,7 @@ namespace Csharp60
         {
             Console.WriteLine("5. Getter only auto properties");
 
-            Point point = new Point(5, 4);
+            var point = new Point(5, 4);
             Console.WriteLine(point);
 
             // Error...
@@ -91,8 +91,27 @@ namespace Csharp60
         {
             Console.WriteLine("6. Property initializers");
 
-            Car car = new Car();
+            var car = new Car();
             Console.WriteLine(car);
+
+            Console.WriteLine();
+        }
+
+        private static void DictionaryInitializers()
+        {
+            Console.WriteLine("7. Dictionary initializers");
+
+            var dictionary = new Dictionary<string, string>
+            {
+                ["A"] = "First",
+                ["B"] = "Second",
+                ["C"] = "Third"
+            };
+
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine($"{item.Key} = {item.Value}");
+            }
 
             Console.WriteLine();
         }
@@ -100,7 +119,7 @@ namespace Csharp60
         static void Main(string[] args)
         {
             Init();
-            
+
             // C# 6.0 examples
             WriteLineUsingStatic();
             StringInterpolation();
@@ -108,6 +127,7 @@ namespace Csharp60
             NullCoalescingOperator();
             GetterOnlyAutoProperties();
             PropertyInitializers();
+            DictionaryInitializers();
         }
     }
 }
