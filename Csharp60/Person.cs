@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp60
 {
-    class Person
+    public class Person
     {
         public string FirstName { get; set; }
 

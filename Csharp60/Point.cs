@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Csharp60
 {
-    class Point
+    public class Point
     {
         public int X { get; }
 

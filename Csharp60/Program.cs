@@ -87,6 +87,16 @@ namespace Csharp60
             Console.WriteLine();
         }
 
+        private static void PropertyInitializers()
+        {
+            Console.WriteLine("6. Property initializers");
+
+            Car car = new Car();
+            Console.WriteLine(car);
+
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             Init();
@@ -97,6 +107,7 @@ namespace Csharp60
             NullConditionalOperator();
             NullCoalescingOperator();
             GetterOnlyAutoProperties();
+            PropertyInitializers();
         }
     }
 }
