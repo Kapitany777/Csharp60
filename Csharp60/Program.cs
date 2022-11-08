@@ -96,7 +96,7 @@ namespace Csharp60
 
             Console.WriteLine();
         }
-
+                
         private static void DictionaryInitializers()
         {
             Console.WriteLine("7. Dictionary initializers");
@@ -116,6 +116,22 @@ namespace Csharp60
             Console.WriteLine();
         }
 
+        private static void NameofOperator()
+        {
+            Console.WriteLine("8. Nameof operator");
+
+            var johnSmith = new Person("John", "Smith");
+
+            Console.WriteLine(nameof(Person));
+            Console.WriteLine(nameof(Person.FirstName));
+
+            Console.WriteLine(nameof(johnSmith));
+            Console.WriteLine(nameof(johnSmith.FirstName));
+            Console.WriteLine(nameof(johnSmith.FullName));
+
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             Init();
@@ -128,6 +144,7 @@ namespace Csharp60
             GetterOnlyAutoProperties();
             PropertyInitializers();
             DictionaryInitializers();
+            NameofOperator();
         }
     }
 }
