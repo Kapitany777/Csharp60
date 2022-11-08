@@ -12,9 +12,6 @@ namespace Csharp60
 
         public string Color { get; set; } = "Blue";
 
-        public override string ToString()
-        {
-            return $"The car's model is {this.Model} and its color is {this.Color}.";
-        }
+        public override string ToString() => $"The car's model is {this.Model} and its color is {this.Color}.";
     }
 }
